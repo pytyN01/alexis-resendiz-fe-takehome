@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with Create React App.
+# This project was bootstrapped with Create React App.
 
 ## View Live Demo: [HERE](https://alexis-resendiz-fe-takehome.vercel.app)
 
