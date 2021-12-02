@@ -6,6 +6,8 @@ This project was bootstrapped with Create React App.
 
 ### Application Packages Installed
 
-Redux Toolkit and React Redux
-Material UI and Material Icons
-Default React Unit Testing - did not use
+Redux Toolkit and React Redux.
+
+Material UI and Material Icons.
+
+Default React Unit Testing. - did not use
