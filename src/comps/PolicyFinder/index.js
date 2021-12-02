@@ -1,14 +1,14 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
 import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
+import Box from "@mui/material/Box";
 import Header from "./header";
-import Body from "./body";
 import Step4 from "./step4";
+import Body from "./body";
+import React from "react";
 
 import { useSelector } from "react-redux";
 
-export default function Main() {
+export default function Index() {
   const ActiveStep = useSelector((state) => state.counter.ActiveStep);
   const Steps = useSelector((state) => state.data.Steps);
 
@@ -23,16 +23,25 @@ export default function Main() {
     Email: "",
   });
 
+  const reset = () => {
+    setUser({
+      Business: "",
+      Industry: "",
+      Location: "",
+      Sales: "",
+      Payroll: "",
+      Employees: "",
+      Name: "",
+      Email: "",
+    });
+  };
+
   const handleChange = (evt) => {
     const value = evt.target.value;
     setUser({
       ...user,
       [evt.target.name]: value,
     });
-  };
-
-  const reset = (x) => {
-    setUser(x);
   };
 
   return (
@@ -50,7 +59,7 @@ export default function Main() {
           </Step>
         ))}
       </Stepper>
-      {ActiveStep === Steps.length && <Step4 reset={(x) => reset(x)} />}
+      {ActiveStep === Steps.length && <Step4 reset={reset} />}
     </Box>
   );
 }

@@ -11,7 +11,6 @@ export const user = createSlice({
     Employees: "",
     Name: "",
     Email: "",
-    Response: "",
   },
   reducers: {
     updateBusiness: (state, action) => {
@@ -38,9 +37,6 @@ export const user = createSlice({
     updateEmail: (state, action) => {
       state.Email += action.payload;
     },
-    setResponse: (state, action) => {
-      state.Response += action.payload;
-    },
     dataReset: (state) => {
       state.Business = "";
       state.Industry = "";
@@ -63,7 +59,6 @@ export const {
   updateEmployees,
   updateName,
   updateEmail,
-  setResponse,
   dataReset,
 } = user.actions;
 

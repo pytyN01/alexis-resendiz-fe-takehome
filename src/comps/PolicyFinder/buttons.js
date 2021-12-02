@@ -45,7 +45,7 @@ export default function Buttons({ index, user }) {
     <Box sx={{ mb: 2 }}>
       <div>
         <Button variant="contained" onClick={handleNext} sx={{ mt: 1, mr: 1 }}>
-          {index === Steps.length - 1 ? "Finish" : "Continue"}
+          {index === Steps.length - 1 ? "Submit" : "Continue"}
         </Button>
         <Button
           disabled={index === 0}

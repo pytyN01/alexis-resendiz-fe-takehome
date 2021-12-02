@@ -6,7 +6,7 @@ export default function Header({ index, step }) {
     <StepLabel
       optional={
         index === 2 ? (
-          <Typography variant="caption">Last step</Typography>
+          <Typography variant="caption">Final step</Typography>
         ) : null
       }
     >

@@ -1,12 +1,7 @@
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
-import * as React from "react";
-
-// import { useSelector } from "react-redux";
 
 export default function Step3({ user, handleChange }) {
-  // const data = useSelector((state) => state.data);
-
   return (
     <Box
       noValidate
